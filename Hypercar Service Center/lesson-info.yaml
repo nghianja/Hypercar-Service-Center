@@ -1,0 +1,8 @@
+type: framework
+content:
+- Welcome
+- Client Menu
+- Electronic Queue
+- Operator Menu
+- Serving Next Client
+current_task: 0
