@@ -683,6 +683,9 @@ files:
         def get(self, request, *args, **kwargs):
             return HttpResponse('')
   learner_created: false
+- name: hypercar/db.sqlite3
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/85/stages/470/implement
-status: Unchecked
+status: Solved
 record: -1
