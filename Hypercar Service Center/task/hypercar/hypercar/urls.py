@@ -17,10 +17,10 @@ from django.urls import path, re_path
 from tickets.views import WelcomeView, MenuView, TicketView, QueueView, NextView
 
 urlpatterns = [
-    path('welcome/', WelcomeView.as_view()),
-    path('menu/', MenuView.as_view()),
+    path('welcome', WelcomeView.as_view()),
+    path('menu', MenuView.as_view()),
     re_path('get_ticket/(?P<ticket_type>[\w_]+)/$', TicketView.as_view()),
-    path('processing/', QueueView.as_view()),
-    path('next/', NextView.as_view())
+    path('processing', QueueView.as_view()),
+    path('next', NextView.as_view())
     # re_path('next/(?P<ticket_number>[\d]+)/$', NextView.as_view())
 ]

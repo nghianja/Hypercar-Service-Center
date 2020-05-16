@@ -29,3 +29,19 @@
 <p>The page with the next ticket should be available at "<em>&lt;base_url&gt;/next</em>", where <em>&lt;base_url&gt;</em> is the host.</p>
 
 <p><div class="alert alert-warning"> Be cautious, URLs in the <em>urls.py</em> module should not contain slash in the end. </div></p>
+
+<h2 style="text-align: center;">Example</h2>
+
+<p>Assume that in some moment all the mechanics are busy and </p>
+
+<ul>
+	<li>the clients with tickets <strong>5</strong> and <strong>8</strong> are still waiting in the queue to change the oil,</li>
+	<li>the client with ticket <strong>4</strong> wants to inflate tires,</li>
+	<li>the client with ticket <strong>3</strong> is waiting to get diagnostics.</li>
+</ul>
+
+<p>When mechanics would finish their job, the operator pushes the button and on the screen for all customers shows information:</p>
+
+<pre><code class="language-html">Next ticket #5</code></pre>
+
+<p>The next ticket is <strong>5</strong> because customers changing the oil go first. So why, after <strong>5</strong> comes <strong>8</strong>, then <strong>4</strong>, and the last is <strong>3</strong>.</p>
